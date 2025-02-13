@@ -30,8 +30,8 @@ Navigate to the `/test` folder to review the unit tests for this project. These 
 npm start
 ```
 
-## Deploy the App Continuously with Azure DevOps:
-Follow my step-by-step guide: [Build Your First CI/CD Pipeline using Azure DevOps](https://youtu.be/EGgg3-FRFwI)
+## Deploy the App Continuously with Github actions:
+1. Create 2 new roles, 1 for the EC2 instance and the other for the codedeploy agent, AmazonEC2RoleforAWSCodeDeploy and AWSCodeDeployRole(Don't forget to change ec2  to codedeploy in trust relationship).
 
 This walkthrough contains all the steps you should follow to fork this repo and build your own automated build and release pipeline.
 

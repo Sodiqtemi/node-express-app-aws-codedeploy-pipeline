@@ -27,11 +27,28 @@ Navigate to the `/test` folder to review the unit tests for this project. These 
 ### Start
 
 ```
-npm start
+npm start or pm2 start "npm start" --name "node-express-app" (if using pm2)
 ```
 
 ## Deploy the App Continuously with Github actions:
 1. Create 2 new roles, 1 for the EC2 instance and the other for the codedeploy agent, AmazonEC2RoleforAWSCodeDeploy and AWSCodeDeployRole(Don't forget to change ec2  to codedeploy in trust relationship).
+
+* Attach an IAM role to the EC2 instance with the necessary CodeDeploy permissions 
+
+* The minimum required permissions should include:
+```{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "codedeploy:*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
 
 This walkthrough contains all the steps you should follow to fork this repo and build your own automated build and release pipeline.
 

@@ -1,4 +1,4 @@
 #!/bin/bash
  
 # start the process
-sudo pm2 restart pm2-ec2-user
+sudo systemctl restart pm2-ec2-user

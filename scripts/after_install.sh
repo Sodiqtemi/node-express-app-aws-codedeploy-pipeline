@@ -20,5 +20,5 @@ pm2 startup
 
 # if it's a typescript app, then you'll run build (npm run build)
 #systemd setup
-sudo env PATH=$PATH:/home/ubuntu/.nvm/versions/node/v22.14.0/bin /home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/bin/pm2 startup systemd -u ubuntu --hp /home/ubuntu
-sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u ubuntu --hp /home/ubuntu
+# sudo env PATH=$PATH:/home/ubuntu/.nvm/versions/node/v22.14.0/bin /home/ubuntu/.nvm/versions/node/v22.14.0/lib/node_modules/pm2/bin/pm2 startup systemd -u ubuntu --hp /home/ubuntu
+# sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u ubuntu --hp /home/ubuntu

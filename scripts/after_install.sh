@@ -12,11 +12,11 @@ ls -al
 # yarn build
 
 npm install
-pm2 start app.js
+# pm2 start app.js
 
 #####
-pm2 save
-pm2 startup
+# pm2 save
+# pm2 startup
 
 # if it's a typescript app, then you'll run build (npm run build)
 #systemd setup

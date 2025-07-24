@@ -1,17 +1,17 @@
 #!/bin/bash
 
 # Get the env file here
-cd /home/ubuntu/node-express-app-aws-codedeploy-pipeline 
-#cp /home/ubuntu/env/.env .
+# cd /home/ubuntu/node-express-app-aws-codedeploy-pipeline 
+# cp /home/ubuntu/env/.env .
 
-pwd
-ls -al
+# pwd
+# ls -al
 
 # # install packages
 # yarn install
 # yarn build
 
-npm install
+#npm install
 # pm2 start app.js
 
 #####

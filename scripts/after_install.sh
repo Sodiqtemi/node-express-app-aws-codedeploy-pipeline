@@ -11,7 +11,7 @@ ls -al
 # yarn install
 # yarn build
 
-npm install
+# npm install
 # pm2 start app.js
 
 #####

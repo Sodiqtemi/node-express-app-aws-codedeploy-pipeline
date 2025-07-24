@@ -1,4 +1,4 @@
-# Node & Express Demo App for Azure DevOps
+# Node & Express Demo App 
 
 > Build Your First CI/CD Pipeline using Azure DevOps with this Demo App.
 
@@ -22,20 +22,17 @@ npm test
 
 ![alt text](https://user-images.githubusercontent.com/5126491/51065379-c1743280-15c1-11e9-80fd-6a3d7ab4ac1b.jpg "Unit Test")
 
-Navigate to the `/test` folder to review the unit tests for this project. These tests will run as part of your Azure DevOps Build pipeline. See `azure-pipelines.yml` in this repo.
+Navigate to the `/test` folder to review the unit tests for this project. 
 
 ### Start
 
 ```
-npm start or pm2 start "npm start" --name "node-express-app" (if using pm2)
+npm start or pm2 start app.js --name "node-express-app" (if using pm2)
 ```
 
 ## Deploy the App Continuously with Github actions:
-1. Create 2 new roles, 1 for the EC2 instance and the other for the codedeploy agent, AmazonEC2RoleforAWSCodeDeploy and AWSCodeDeployRole(Don't forget to change ec2  to codedeploy in trust relationship).
+1. Create 2 new roles, 1 for the EC2 instance and the other for the codedeploy service, attached the permissions AmazonEC2RoleforAWSCodeDeploy and AWSCodeDeployRole respectively(Don't forget to change ec2  to codedeploy in the trust relationship for the codedeploy service role, something like the following: ).
 
-* Attach an IAM role to the EC2 instance with the necessary CodeDeploy permissions 
-
-* The minimum required permissions should include:
 ```{
     "Version": "2012-10-17",
     "Statement": [

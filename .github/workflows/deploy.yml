@@ -25,5 +25,5 @@ jobs:
         aws deploy create-deployment \
         --application-name Expressapp \
         --deployment-group-name EPapp_group \
-        --deployment-config-name CodeDeployDefault.AllAtATime \
+        --deployment-config-name CodeDeployDefault.AllAtOnce \
         --github-location repository=${{ github.repository }},commitId=${{ github.sha }}

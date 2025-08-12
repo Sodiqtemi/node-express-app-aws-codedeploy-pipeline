@@ -23,7 +23,7 @@ jobs:
       id: deploy
       run: |
         aws deploy create-deployment \
-        --application-name Expressapp \
-        --deployment-group-name EPapp_group \
+        --application-name Ubuntuapp \
+        --deployment-group-name Ubuntu-CD-DG \
         --deployment-config-name CodeDeployDefault.AllAtOnce \
         --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
